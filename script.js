@@ -12,12 +12,15 @@ formulario.addEventListener("submit", function(evento){
         return;
     }
     
-    console.log(textoTarefa);
+   
     const novaTarefa = document.createElement("li");
     novaTarefa.textContent = textoTarefa;
 
     listaTarefas.appendChild(novaTarefa);
     campoTarefa.value = "";
 
-    document.queryselect
+    novaTarefa.textContent = textoTarefa;
+    listaTarefas.appendChild(novaTarefa);
+   
+    
 });
