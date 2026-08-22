@@ -1,0 +1,12 @@
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+hr {
+    border: none;
+    border-top: 1px solid #49445f;
+    margin: 1em 0;
+}
