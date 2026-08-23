@@ -1,5 +1,5 @@
 h1 {
-    color: #333;
+    color: #000000;
     font-size: 2em;
     margin-bottom: 1em;
     display: flex;
@@ -9,4 +9,16 @@ hr {
     border: none;
     border-top: 1px solid #49445f;
     margin: 1em 0;
+}
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+    color:green;
+}
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #777777;
+    border-radius: 20px;
 }

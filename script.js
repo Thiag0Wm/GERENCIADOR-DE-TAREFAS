@@ -16,11 +16,20 @@ formulario.addEventListener("submit", function(evento){
     const novaTarefa = document.createElement("li");
     novaTarefa.textContent = textoTarefa;
 
-    listaTarefas.appendChild(novaTarefa);
+    listaTarefas.appendChild(novaTarefa); 
+    const botaoExcluir = document.createElement("button");
+    botaoExcluir.textContent = "Excluir";
+    novaTarefa.appendChild(botaoExcluir);
     campoTarefa.value = "";
-
-    novaTarefa.textContent = textoTarefa;
-    listaTarefas.appendChild(novaTarefa);
-   
+    evento.stopPropagation();
+    botaoExcluir.addEventListener("click", function () {
+        
+        novaTarefa.remove();
+        
+    });
+    novaTarefa.addEventListener("click", function () {
+        novaTarefa.classList.toggle("concluida");
+    });
+    
     
 });
