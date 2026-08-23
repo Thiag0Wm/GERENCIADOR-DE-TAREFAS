@@ -21,9 +21,9 @@ formulario.addEventListener("submit", function(evento){
     botaoExcluir.textContent = "Excluir";
     novaTarefa.appendChild(botaoExcluir);
     campoTarefa.value = "";
-    evento.stopPropagation();
-    botaoExcluir.addEventListener("click", function () {
-        
+    
+    botaoExcluir.addEventListener("click", function (eventoClique) {
+        eventoClique.stopPropagation();
         novaTarefa.remove();
         
     });
